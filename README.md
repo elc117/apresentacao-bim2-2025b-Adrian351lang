@@ -86,9 +86,7 @@ public class Main {
 
 ```
 # Vídeo (30 segundos):
-<video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/0852ebec-7698-40f2-83c6-4d5160462481
 
 # Fontes:
 1. <https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/28/README.md#1>
