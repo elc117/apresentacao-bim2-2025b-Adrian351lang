@@ -37,27 +37,29 @@ public class RunnableExample implements Runnable {
 ## Exemplo com classe que herda de outra e implementa Runnable:
 ```java
 class Animal {
+
     protected String name;
 
     public Animal(String name) {
         this.name = name;
     }
-    
+
     public void makeSound() {
         System.out.println("Generic animal noises.");
     }
 }
 
 class Cat extends Animal implements Runnable {
+
     public Cat(String name) {
         super(name);
     }
-    
+
     @Override
     public void makeSound() {
-        System.out.println(name + " says: meow.");
+        System.out.println(name + " says meow.");
     }
-    
+
     @Override
     public void run() {
         System.out.println(name + " is running.");
@@ -66,16 +68,28 @@ class Cat extends Animal implements Runnable {
 }
 
 public class Main {
+
     public static void main(String[] args) {
         Cat myCat = new Cat("Garfield");
         Thread catAction = new Thread(myCat);
+        Thread catAction2 = new Thread(myCat);
         catAction.start();
+        catAction2.start();
+        new Thread(myCat).start();
+        new Thread(myCat).start();
+        new Thread(myCat).start();
+        new Thread(myCat).start();
+        new Thread(myCat).start();
         new Thread(myCat).start();
     }
 }
+
 ```
-# Vídeo (1 minuto):
-TODO
+# Vídeo (30 segundos):
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
 # Fontes:
 1. <https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/28/README.md#1>
 2. <https://www.w3schools.com/java/java_threads.asp>
