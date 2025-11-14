@@ -18,7 +18,7 @@ public class ThreadExample extends Thread {
    }
 }
 ```
-## Exemplo simples run Runnable:
+## Exemplo simples com Runnable:
 ```java
 public class RunnableExample implements Runnable {
    public void run() {
@@ -87,6 +87,10 @@ public class Main {
 ```
 # Vídeo (30 segundos):
 https://github.com/user-attachments/assets/0852ebec-7698-40f2-83c6-4d5160462481
+
+# Conclusão (30 segundos):
+Não início achei estranho o fato de que o Runnable pode ter várias threads, mas podemos pensar que no caso da Thread,
+o objeto em si é a Thread, ou seja, a ação; já no Runnable, um objeto pode iniciar Threads.
 
 # Fontes:
 1. <https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/28/README.md#1>
